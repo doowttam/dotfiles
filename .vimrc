@@ -1,3 +1,7 @@
+" Useful plugins
+" AutoClose: http://www.vim.org/scripts/script.php?script_id=2009
+" CommandT: https://wincent.com/products/command-t
+
 " Put swapfiles in a central place
 set backupdir=~/.vim/backup/
 set directory=~/.vim/backup/
@@ -49,3 +53,6 @@ function! InsertTabWrapper()
 endfunction
 
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+
+" Better indenting based on file type
+filetype plugin indent on
