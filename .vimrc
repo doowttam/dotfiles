@@ -65,5 +65,5 @@ autocmd FileType text AutoCloseOff
 au BufRead,BufNewFile *.md set filetype=markdown
 
 " Tern
-so ~/tern/vim/tern.vim
+" so ~/tern/vim/tern.vim
 
