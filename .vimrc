@@ -76,3 +76,8 @@ au BufRead,BufNewFile *.md set filetype=markdown
 " Tern
 " so ~/tern/vim/tern.vim
 
+" Increase the number of files CommandT will scan for
+let g:CommandTMaxFiles=15000
+
+" Template Toolkit
+au BufNewFile,BufRead *.tt setf tt2html
