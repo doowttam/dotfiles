@@ -56,3 +56,14 @@ inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 
 " Better indenting based on file type
 filetype plugin indent on
+
+" FIXME: Seems to turn it off for all buffers
+" Don't AutoClose in text files
+autocmd FileType text AutoCloseOff
+
+" .md should be recognized as Markdown
+au BufRead,BufNewFile *.md set filetype=markdown
+
+" Tern
+so ~/tern/vim/tern.vim
+
