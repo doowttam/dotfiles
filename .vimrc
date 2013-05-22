@@ -81,3 +81,7 @@ let g:CommandTMaxFiles=15000
 
 " Template Toolkit
 au BufNewFile,BufRead *.tt setf tt2html
+
+" Scroll half pages with with Ctrl-J and Ctrl-K
+nnoremap <C-j> <C-D>
+nnoremap <C-k> <C-U>
